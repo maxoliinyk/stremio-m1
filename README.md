@@ -93,6 +93,7 @@ Edit `./CMakeLists.txt` and `./mac/finalize.sh` as follows:
 qmake CONFIG+=sdk_no_version_check
 cmake -DCMAKE_PREFIX_PATH=/opt/homebrew/opt/qt@5 .
 cmake --build .
+npm install -g appdmg
 chmod +x ./mac/finalize.sh && ./mac/finalize.sh
 chmod +x ./mac/pack.sh && ./mac/pack.sh
 ```
